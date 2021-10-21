@@ -71,6 +71,10 @@
     			
             
     			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+            
+    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -305,7 +309,7 @@
       本站访问量<span id="busuanzi_value_site_pv"></span>次&nbsp;
       本站访客数<span id="busuanzi_value_site_uv"></span>人&nbsp;
       本页阅读量<span id="busuanzi_value_page_pv"></span>次&nbsp;
-      <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+       <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 <script>
     var now = new Date(); 
     function createtime() { 
@@ -326,8 +330,8 @@
         &copy; 2021 han
       </div>
       <div class="footer-right">
-        <a href="http://hexo.io/" target="_blank">Hexo</a>
       </div>
+      
     </div>
   </div>
 </footer>
@@ -425,17 +429,25 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -507,6 +519,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="https://www.runoob.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>菜鸟教程</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.52pojie.cn/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>吾爱破解</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
+    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
@@ -528,7 +556,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 				xmlhttp.open("GET", "https://v1.hitokoto.cn/?c=a&c=d&c=c", true);
 				xmlhttp.send();
 			</script>
-			<p id="js-aboutme" style="margin:0 20px 0 20px;">本科在读，编程菜鸟</p> 
+			<p id="js-aboutme" style="margin:0 20px 0 20px;">编程菜鸟</p> 
 		</div> 
 	</div> 
 
